@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -18,7 +19,8 @@ img {
     width: 100%;
 }
 body {
-    background-image: url(../images/vintage.png);
+    background-image: linear-gradient(
+45deg, #fadab9, #e0ad79);
     color: var(--text-color);
     background-size: cover;
 }
@@ -44,8 +46,32 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 5px 0;
 }
+
+.navbar {
+    margin-bottom: -16px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    flex-direction: row;
+}
+
+.navbar ul li a{
+    color: #1a1919;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.navbar ul li a:hover {
+    color: rgb(242, 236, 236);
+}
+
 .logo {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -97,7 +123,7 @@ header {
     text-transform: uppercase;
 }
 .cart-price {
-    font-weight: 500;
+    font-weight: 600;
 }
 .cart-quantity {
     border: 1px solid var(--text-color);
@@ -125,7 +151,7 @@ header {
     margin-left: 0.5rem;
 }
 .btn-buy {
-    display: flex;
+    display: flex;shop-content
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
@@ -147,10 +173,13 @@ header {
     cursor: pointer;
 }
 .section-title {
-    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 .shop {
     margin-top: 2rem;
@@ -159,29 +188,32 @@ header {
 .shop-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .product-box {
     position: relative;
 }
 .product-box:hover {
-    padding: 10px;
-    border: 1px solid var(--text-color);
+    padding: 1.5px;
     transition: 0.4s;
 }
 .product-img {
-    width: 260px;
-    height: 280px;
+    border-radius: 2%;
+    max-width: 260px;
+    max-height: 300px;
     margin-bottom: 0.5rem;
 }
 .product-title {
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.2rem;
 }
 .price {
+    position: absolute;
+    bottom: 0;
     font-weight: 500;
+    font-size: 17px;
 }
 .add-cart {
     position: absolute;

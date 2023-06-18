@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -13,7 +14,20 @@
     <header>
         <!--Nav-->
         <div class="nav container">
-            <a href="#" class="logo">Shop</a>
+            <a href="index.html"><img src="images/classic.png" width="50" height="50"></a>
+            <div class="navbar ml-auto">
+                <ul>
+                    <li>
+                        <a href="#partitur">Partitur</a>
+                    </li>
+                    <li>
+                        <a href="#rekaman">Rekaman</a>
+                    </li>
+                    <li>
+                        <a href="#alat-musik">Alat Musik</a>
+                    </li>
+                </ul>
+            </div>
             <!--Cart Icon-->
             <i class="bx bx-shopping-bag" id=cart-icon></i>
             <!--Cart-->
@@ -37,65 +51,107 @@
     </header>
     <!--Shop-->
     <section class="shop container">
-        <h2 class="section-title">Shop Products</h2>
+        <h2 class="section-title" id="partitur">Partitur</h2>
         <div class="shop-content">
-            <!--Box 1-->
-            <div class="product-box">
-                <img src="images/sheet-stand.jpg" alt="" class="product-img">
-                <h2 class="product-title">Partitur Sheet Stand</h2>
-                <span class="price">Rp87000</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <!--Box 2-->
             <div class="product-box">
                 <img src="images/debussy-piano.jpg" alt="" class="product-img">
                 <h2 class="product-title">Debussy Piano Works</h2>
-                <span class="price">Rp73000</span>
+                <span class="price">Rp73,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 3-->
             <div class="product-box">
                 <img src="images/chopin-nocturnes.jpg" alt="" class="product-img">
-                <h2 class="product-title">Chopin Nocturnes</h2>
-                <span class="price">Rp64500</span>
+                <h2 class="product-title"> Frédéric Chopin: <br> Nocturnes</h2>
+                <span class="price">Rp64,500</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 4-->
             <div class="product-box">
                 <img src="images/beyer-op101.jpg" alt="" class="product-img">
-                <h2 class="product-title">Beyer OP 101</h2>
-                <span class="price">Rp70000</span>
+                <h2 class="product-title">Beyer, F: Elementary <br> Method Op.101</h2>
+                <span class="price">Rp70,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 5-->
+            <div class="product-box">
+                <img src="images/Schuman-cadenzas.jpg" alt="" class="product-img">
+                <h2 class="product-title">Schumann, C: Cadenzas to <br> Piano Concertos</h2>
+                <span class="price">Rp70,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/Tchaikovsky-Concerto.jpg" alt="" class="product-img">
+                <h2 class="product-title">Tchaikovsky: Concerto <br> in D Op.35</h2>
+                <span class="price">Rp100,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/vivaldi-two-sonatas.jpg" alt="" class="product-img">
+                <h2 class="product-title">Vivaldi: Two Sonatas</h2>
+                <span class="price">Rp100,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/bach-fugues.jpg" alt="" class="product-img">
+                <h2 class="product-title">J.S.Bach: Short Preludes, <br> Fugues and Fughettas</h2>
+                <span class="price">Rp100,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="rekaman">Rekaman</h2>
+        <div class="shop-content">
             <div class="product-box">
                 <img src="images/Beethoven-Choral-Symphony.webp" alt="" class="product-img">
                 <h2 class="product-title">Beethoven Choral Symphony</h2>
-                <span class="price">Rp550000</span>
+                <span class="price">Rp220,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 6-->
             <div class="product-box">
                 <img src="images/Hilary-Eclipse.jpg" alt="" class="product-img">
                 <h2 class="product-title">Hilary Hahn - Eclipse</h2>
-                <span class="price">Rp219000</span>
+                <span class="price">Rp219,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 7-->
             <div class="product-box">
-                <img src="images/biola.webp" alt="" class="product-img">
-                <h2 class="product-title">Biola</h2>
-                <span class="price">Rp600000</span>
+                <img src="images/Haydn-Quartet.jpg" alt="" class="product-img">
+                <h2 class="product-title">Haydn: String Quartets <br> Op. 33 Nos 1-3</h2>
+                <span class="price">Rp200,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-            <!--Box 8-->
             <div class="product-box">
-                <img src="images/cello.webp" alt="" class="product-img">
-                <h2 class="product-title">Cello</h2>
-                <span class="price">Rp2650000</span>
+                <img src="images/vivaldi-four-season.jpg" alt="" class="product-img">
+                <h2 class="product-title">Vivaldi: <br> The Four Seasons</h2>
+                <span class="price">Rp220,000</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
-        </div>    
+        </div>
+        
+        <h2 class="section-title" id="alat-musik">Alat Musik</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="images/Stentor-Violin.jpg" alt="" class="product-img">
+                <h2 class="product-title">Stentor Violin <br> Outfit Student</h2>
+                <span class="price">Rp2,300,0000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/odyssey-flute.jpg" alt="" class="product-img">
+                <h2 class="product-title">Odyssey Premiere <br>'C' Flute Outfit</h2>
+                <span class="price">Rp8,300,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/guitar-valencia.jpg" alt="" class="product-img">
+                <h2 class="product-title">Valencia Guitar <br> 4/4 VC204NA</h2>
+                <span class="price">Rp1,700.000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="images/trumpet.jpg" alt="" class="product-img">
+                <h2 class="product-title">Odyssey Debut <br>'Bb' Trumpet Outfit</h2>
+                <span class="price">Rp6,600,000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
     </section>
     <!--Link To JS-->
     <script src="js/shop.js"></script>
