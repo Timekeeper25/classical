@@ -1249,6 +1249,11 @@ textarea#comment.update_mail::placeholder {
     bottom: 25px;
 }
 
+.active {
+    background: #fff;
+    border-radius: 6px;
+  }
+
 
 
 
