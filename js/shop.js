@@ -124,3 +124,17 @@ function updateTotal(){
 
     document.getElementsByClassName('total-price')[0].innerText = "Rp." + total;
 }
+
+// Get all navigation items
+const navItems = document.querySelectorAll('.navbar ul li');
+
+// Add click event listeners to each navigation item
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Remove the 'active' class from all navigation items
+    navItems.forEach(item => item.classList.remove('active'));
+
+    // Add the 'active' class to the clicked navigation item
+    item.classList.add('active');
+  });
+});

@@ -69,7 +69,14 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: rgb(242, 236, 236);
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li a.active {
+    background: #fff;
+    border-radius: 5px;
 }
 
 .logo {
@@ -227,6 +234,7 @@ header {
 .add-cart:hover {
     background: hsl(249, 32%, 17%);
 }
+  
 
 @media (max-width: 1080px){
     .nav {
