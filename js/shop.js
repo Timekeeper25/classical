@@ -105,7 +105,7 @@ function addProductToCart(title, price, productImg) {
   
     updateTotal();
 }
-  
+
 //update total
 function updateTotal(){
     var cartContent = document.getElementsByClassName('cart-content')[0];
@@ -115,14 +115,14 @@ function updateTotal(){
         var cartBox = cartBoxes[i];
         var priceElement = cartBox.getElementsByClassName('cart-price')[0];
         var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-        var price = parseFloat(priceElement.innerText.replace('Rp', ''));
+        var price = parseFloat(priceElement.innerText.replace('Rp', '').replace(/,/g,''));
         var quantity  = quantityElement.value;
         total = total + (price * quantity);
         // cent
     }
-    total = Math.round(total * 100) / 100;
-
-    document.getElementsByClassName('total-price')[0].innerText = "Rp." + total;
+    // total = Math.round(total * 100) / 100;
+    var totalComma = total.toLocaleString()
+    document.getElementsByClassName('total-price')[0].innerText = "Rp. " + totalComma;
 }
 
 // Get all navigation items
