@@ -30,6 +30,14 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <style>
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         #container {
+            flex: 1 1 auto;
+         }
          header{
             position: fixed;
             top: 0;
@@ -80,7 +88,7 @@
       
       <!-- header section end -->
       <!-- contact section start -->
-      <div class="contact_section layout_padding" style="margin-top: 5%;">
+      <div class="contact_section layout_padding" id="container" style="margin-top: 5%;">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -105,6 +113,7 @@
             </div>
          </div>
       </div>
+      
       <div class="copyright_section footer">
          <div class="container">
             <div class="row">

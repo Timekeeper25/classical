@@ -1254,7 +1254,32 @@ textarea#comment.update_mail::placeholder {
     border-radius: 6px;
 }
 
-
+@media (max-width: 767px) {
+    .content h1 {
+      font-size: 40px;
+      margin-top: 180px;
+    }
+  }
+  
+  /* Tablets and Small Desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .content h1 {
+      font-size: 120px;
+      margin-top: 220px;
+    }
+    .navbar-collapse {
+        background: transparent;
+    }
+  }
+  
+  /* Medium and Large Desktops */
+  @media (min-width: 992px) {
+    .content h1 {
+      font-size: 160px;
+      margin-top: 280px;
+    }
+  }
+  
 
 
 
